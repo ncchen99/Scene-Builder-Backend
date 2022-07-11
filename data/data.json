@@ -1,138 +1,84 @@
-[
-    {
-        "name": "",
-        "position": {
-            "x": 0,
-            "y": 0,
-            "z": 0
+{
+    "data": [
+        {
+            "name": "",
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "name": "Cube",
+            "position": {
+                "x": -75,
+                "y": 25,
+                "z": 125
+            }
+        },
+        {
+            "name": "Cube",
+            "position": {
+                "x": -75,
+                "y": 75,
+                "z": 125
+            }
+        },
+        {
+            "name": "Cube",
+            "position": {
+                "x": -75,
+                "y": 125,
+                "z": 125
+            }
+        },
+        {
+            "name": "Cube",
+            "position": {
+                "x": -75,
+                "y": 175,
+                "z": 125
+            }
+        },
+        {
+            "name": "Cube",
+            "position": {
+                "x": -25,
+                "y": 175,
+                "z": 125
+            }
+        },
+        {
+            "name": "Cube",
+            "position": {
+                "x": 25,
+                "y": 175,
+                "z": 125
+            }
+        },
+        {
+            "name": "Cube",
+            "position": {
+                "x": 75,
+                "y": 175,
+                "z": 125
+            }
+        },
+        {
+            "name": "Cube",
+            "position": {
+                "x": 125,
+                "y": 175,
+                "z": 125
+            }
+        },
+        {
+            "name": "Cube",
+            "position": {
+                "x": 175,
+                "y": 175,
+                "z": 125
+            }
         }
-    },
-    {
-        "name": "Cube",
-        "position": {
-            "x": 375,
-            "y": 25,
-            "z": 175
-        }
-    },
-    {
-        "name": "Cube",
-        "position": {
-            "x": 225,
-            "y": 25,
-            "z": 275
-        }
-    },
-    {
-        "name": "Cube",
-        "position": {
-            "x": 225,
-            "y": 25,
-            "z": 325
-        }
-    },
-    {
-        "name": "Cube",
-        "position": {
-            "x": 325,
-            "y": 25,
-            "z": 375
-        }
-    },
-    {
-        "name": "Cube",
-        "position": {
-            "x": 375,
-            "y": 25,
-            "z": 375
-        }
-    },
-    {
-        "name": "Cube",
-        "position": {
-            "x": 375,
-            "y": 75,
-            "z": 375
-        }
-    },
-    {
-        "name": "Cube",
-        "position": {
-            "x": 275,
-            "y": 25,
-            "z": 275
-        }
-    },
-    {
-        "name": "Cube",
-        "position": {
-            "x": 325,
-            "y": 25,
-            "z": 425
-        }
-    },
-    {
-        "name": "Cube",
-        "position": {
-            "x": 325,
-            "y": 75,
-            "z": 375
-        }
-    },
-    {
-        "name": "Cube",
-        "position": {
-            "x": 325,
-            "y": 125,
-            "z": 375
-        }
-    },
-    {
-        "name": "Cube",
-        "position": {
-            "x": 325,
-            "y": 75,
-            "z": 425
-        }
-    },
-    {
-        "name": "Cube",
-        "position": {
-            "x": 325,
-            "y": 25,
-            "z": 275
-        }
-    },
-    {
-        "name": "Cube",
-        "position": {
-            "x": 275,
-            "y": 75,
-            "z": 275
-        }
-    },
-    {
-        "name": "Cube",
-        "position": {
-            "x": 225,
-            "y": 25,
-            "z": 375
-        }
-    },
-    {
-        "name": "Cube",
-        "position": {
-            "x": 225,
-            "y": 75,
-            "z": 375
-        }
-    },
-    {
-        "name": "Cube",
-        "position": {
-            "x": 275,
-            "y": 25,
-            "z": 375
-        }
-    }
-]
+    ]
+}
