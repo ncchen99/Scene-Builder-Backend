@@ -3,9 +3,9 @@ import os
 from pymongo import MongoClient
 import urllib
 
-username = urllib.parse.quote_plus('ncc')
+username = urllib.parse.quote_plus('')
 
-password = urllib.parse.quote_plus('***REMOVED***')
+password = urllib.parse.quote_plus('')
 
 client = MongoClient('mongodb://%s:%s@127.0.0.1' % (username, password))
 

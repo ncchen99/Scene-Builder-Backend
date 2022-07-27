@@ -17,7 +17,7 @@ load_dotenv()
 username = urllib.parse.quote_plus(os.getenv('USERNAME'))
 password = urllib.parse.quote_plus(os.getenv('PASSWORD'))
 
-client = MongoClient('mongodb://%s:%s@127.0.0.1' % (username, password))
+client = MongoClient('mongodb://%s:%s@mongo:27017' % (username, password))
 db = client["app"]
 collection = db["data"]
 
