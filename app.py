@@ -16,8 +16,8 @@ load_dotenv()
 
 username = urllib.parse.quote_plus(os.getenv('USERNAME'))
 password = urllib.parse.quote_plus(os.getenv('PASSWORD'))
-
-client = MongoClient('mongodb://%s:%s@mongo:27017' % (username, password))
+server = "mongo"  # "127.0.0.1"  # mongo
+client = MongoClient('mongodb://%s:%s@%s:27017' % (username, password, server))
 db = client["app"]
 collection = db["data"]
 
@@ -27,11 +27,11 @@ collection = db["data"]
 def submit():
     if request.method == 'POST':
         data = json.loads(request.data.decode('utf-8'))
-        collection.insert_one(data)
         file = open("data/data.json", "w", encoding='utf-8')
         json.dump(data, file, indent=4, ensure_ascii=True)
         file.close()
-        print("post : data => ", data)
+        collection.insert_one(data)
+        print("post successfully!")
         response = jsonify({"ok": True})
         return response
 
@@ -45,7 +45,7 @@ def download(filename):
 
 @app.route('/data')
 def query():
-    return json.loads(json_util.dumps(collection.find_one()))
+    return json.loads(json_util.dumps(list(collection.find())[-1]))
 
 
 if __name__ == '__main__':
