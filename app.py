@@ -27,20 +27,20 @@ collection = db["data"]
 def submit():
     if request.method == 'POST':
         data = json.loads(request.data.decode('utf-8'))
-        file = open("data/data.json", "w", encoding='utf-8')
-        json.dump(data, file, indent=4, ensure_ascii=True)
-        file.close()
+        # file = open("data/data.json", "w", encoding='utf-8')
+        # json.dump(data, file, indent=4, ensure_ascii=True)
+        # file.close()
         collection.insert_one(data)
         print("post successfully!")
         response = jsonify({"ok": True})
         return response
 
 
-@app.route('/data/<path:filename>', methods=['GET'])
-def download(filename):
-    print(os.path.join(os.getcwd(), "data/"))
-    print(filename)
-    return send_from_directory("data", filename, as_attachment=True)
+# @app.route('/data/<path:filename>', methods=['GET'])
+# def download(filename):
+#     print(os.path.join(os.getcwd(), "data/"))
+#     print(filename)
+#     return send_from_directory("data", filename, as_attachment=True)
 
 
 @app.route('/data')
