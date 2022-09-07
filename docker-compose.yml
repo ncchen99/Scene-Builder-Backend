@@ -2,12 +2,16 @@ version: '3.8'
 services:
   web:
     build: .
+    environment:
+      USERNAME: ${USERNAME}
+      PASSWORD: ${PASSWORD}
     ports:
     - "5000:5000"
     volumes:
     - .:/opt
     links:
     - mongo
+
   mongo:
     image: mongo
     environment:

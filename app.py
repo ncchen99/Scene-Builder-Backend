@@ -12,10 +12,10 @@ app.config['SECRET_KEY'] = 'ABC'
 app.config['CORS_HEADERS'] = 'Content-Type'
 
 CORS(app)
-load_dotenv()
+# load_dotenv()
 
-username = urllib.parse.quote_plus(os.getenv('USERNAME'))
-password = urllib.parse.quote_plus(os.getenv('PASSWORD'))
+username = os.environ["USERNAME"]
+password = os.environ["PASSWORD"]
 server = "mongo"  # "127.0.0.1"  # mongo
 client = MongoClient('mongodb://%s:%s@%s:27017' % (username, password, server))
 db = client["app"]
