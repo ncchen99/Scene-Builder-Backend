@@ -1,27 +1,9 @@
-version: '3.8'
+version: "3.9"  # optional since v1.27.0
 services:
-  web:
+  ros:
     build: .
-    environment:
-      USERNAME: ${USERNAME}
-      PASSWORD: ${PASSWORD}
     ports:
-    - "5000:5000"
+      - "80:8000"
     volumes:
-    - .:/opt
-    links:
-    - mongo
-
-  mongo:
-    image: mongo
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: ${USERNAME}
-      MONGO_INITDB_ROOT_PASSWORD: ${PASSWORD}
-    ports:
-      - "8000:27017"
-    volumes:
-      - mongo-data:/data/db
-      - mongo-configdb:/data/configdb
-volumes:
-  mongo-data:
-  mongo-configdb:
+      - "./ros:/root/ros/"
+    tty: true
