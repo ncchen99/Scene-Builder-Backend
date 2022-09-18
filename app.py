@@ -8,7 +8,7 @@ from flask import Flask, request, render_template, redirect, send_from_directory
 from bson import json_util
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'ABC'
+app.config['SECRET_KEY'] = os.urandom(24)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
 CORS(app)
